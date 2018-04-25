@@ -1,0 +1,6 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^2.2",
+        "maknz/slack": "^1.7"
+    }
+}
