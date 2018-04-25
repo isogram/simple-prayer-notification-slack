@@ -85,17 +85,11 @@ if (count($result) > 0) {
     unset($data['year']);
     unset($data['month']);
     unset($data['date']);
+    unset($data['imsyak']);
+    unset($data['syuruq']);
 
     // adzab time
     print_r($data);
-
-    $imsyak     = substr($data['imsyak'], 0, 5);
-    $fajr       = substr($data['fajr'], 0, 5);
-    $syuruq     = substr($data['syuruq'], 0, 5);
-    $dzuhr      = substr($data['dzuhr'], 0, 5);
-    $ashr       = substr($data['ashr'], 0, 5);
-    $maghrib    = substr($data['maghrib'], 0, 5);
-    $isha       = substr($data['isha'], 0, 5);
 
     foreach ($data as $key => $azanTime) {
       $azanTime = substr($azanTime, 0, 5);
